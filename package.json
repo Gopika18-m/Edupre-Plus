@@ -1,0 +1,17 @@
+{
+  "name": "edupre-plus",
+  "version": "3.0.0",
+  "description": "EduPre Plus - Academic Risk Intelligence Platform",
+  "scripts": {
+    "live": "node start-tunnel.js",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install",
+    "build:frontend": "npm --prefix frontend install && npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend install",
+    "start": "node backend/server.js",
+    "seed": "node backend/utils/seed.js"
+  },
+  "devDependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}
